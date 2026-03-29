@@ -1,0 +1,186 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;;
+}
+
+/* Background */
+body {
+  background-image: url("Icons/image.png");
+  background-size: cover;        
+  background-position: center;   
+  background-repeat: no-repeat;  
+
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+/* Container */
+.container {
+  background: rgba(1, 14, 20, 0.15);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  padding: 25px;
+  border-radius: 15px;
+  width: 350px;
+  text-align: center;
+  color: black;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.3);
+  border: 1px solid rgba(255,255,255,0.2);
+}
+
+
+body.dark {
+  background: linear-gradient(135deg, #1e1e2f, #121212);
+  color: white;
+  
+}
+
+body.dark .container {
+  color: white;
+}
+
+/* Heading */
+h1 {
+  margin-bottom: 15px;
+}
+
+/* Search */
+.search-box {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 15px;
+}
+
+.search-box input {
+  flex: 1;
+  padding: 10px;
+  border-radius: 8px;
+  border: none;
+  outline: none;
+}
+
+.search-box button {
+  padding: 10px;
+  border-radius: 8px;
+  border: none;
+  background: #ff7a18;
+  color: white;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.search-box button:hover {
+  background: #e86c10;
+}
+
+/* Toggle */
+#toggleMode {
+  margin-bottom: 15px;
+  padding: 8px 12px;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+  background: #00c6ff;
+  color: black;
+  font-weight: bold;
+}
+
+/* Weather Card */
+.weather-card {
+  margin-top: 15px;
+  padding: 15px;
+  border-radius: 12px;
+  background: rgba(255,255,255,0.2);
+  box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+  transition: 0.3s;
+}
+
+.weather-card:hover {
+  transform: scale(1.03);
+}
+
+.weather-card img {
+  width: 80px;
+}
+
+.weather-card p {
+  margin: 5px 0;
+}
+
+/* History */
+.history {
+  margin-top: 15px;
+}
+
+.history h3 {
+  margin-bottom: 8px;
+}
+
+.history ul {
+  list-style: none;
+  margin-top: 10px;
+}
+
+.history li {
+  background: rgba(255,255,255,0.3);
+  margin: 5px 0;
+  padding: 8px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.history li:hover {
+  background: rgba(255,255,255,0.5);
+}
+
+/* Clear Button */
+.history button {
+  margin-top: 5px;
+  padding: 6px 10px;
+  border: none;
+  border-radius: 6px;
+  background: red;
+  color: white;
+  cursor: pointer;
+}
+
+/* Hidden */
+.hidden {
+  display: none;
+}
+
+/* Error */
+#error {
+  color: #ff4d4d;
+  margin-top: 10px;
+}
+
+button {
+  transition: 0.3s;
+}
+
+button:hover {
+  transform: scale(1.05);
+  opacity: 0.9;
+}
+
+/* Responsive */
+@media (max-width: 480px) {
+  .container {
+    width: 90%;
+  }
+
+  .search-box {
+    flex-direction: column;
+  }
+
+  .search-box button {
+    width: 100%;
+  }
+}
