@@ -8,7 +8,7 @@
 /* Body */
 body {
   font-family: Arial, sans-serif;
-  background: linear-gradient(135deg, #74b9ff, #a29bfe);
+  background: linear-gradient(135deg, #052b51, #20071d);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -165,6 +165,7 @@ h1 {
 
 .dark .container {
   background: rgba(0,0,0,0.5);
+  color: black;
 }
 
 .dark .weather-card {
